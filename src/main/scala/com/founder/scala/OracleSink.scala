@@ -22,7 +22,7 @@ class OracleSink(url: String, user: String, pwd: String) extends RichSinkFunctio
 
       conn.setAutoCommit(false)
 
-      p  = conn.prepareStatement("insert into nhip_test_student(NAME, AGE, SEX, SID) VALUES (?, ?, ?, ?)")
+      p  = conn.prepareStatement("insert into student(NAME, AGE, SEX, SID) VALUES (?, ?, ?, ?)")
     } catch {
       case ex:Exception => {
         println(ex.getMessage)

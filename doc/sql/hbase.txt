@@ -1,0 +1,2 @@
+create 'student',{NAME => 'f', VERSIONS => 2}
+
